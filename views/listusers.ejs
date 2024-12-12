@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List of our users</title>
+        <link rel="stylesheet" type="text/css" href="/main.css" />
+    </head>
+    <body>
+        <h1>All of our users:</h1>
+        <ul>
+            <% availableFilm.forEach(function(film) { %>
+              <li><%= film.name %>, £<%=film.price%> </li>
+            <% }) %>
+          </ul>
+        <p><a href="/ ">Go back to homepage</a></p>
+    </body>
+</html>
