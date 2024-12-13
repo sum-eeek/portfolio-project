@@ -5,10 +5,11 @@
         <link rel="stylesheet" type="text/css" href="/main.css" />
     </head>
     <body>
-        <h1>All of our users:</h1>
+        <h1>All users</h1>
+        <p>A list of our site's users:</p>
         <ul>
-            <% availableFilm.forEach(function(film) { %>
-              <li><%= film.name %>, £<%=film.price%> </li>
+            <% availableLogin.forEach(function(login) { %>
+              <li><%= login.username %>, id:<%=login.id%> </li>
             <% }) %>
           </ul>
         <p><a href="/ ">Go back to homepage</a></p>
